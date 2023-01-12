@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
     && apt-get clean -y && rm -rf /var/lib/apt/lists
 
 
+USER ${USERNAME}
+
 # Install Rust
 # ENV RUST_VERSION stable
 # RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUST_VERSION}
@@ -39,8 +41,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends build-essential
 # RUN cargo install cargo-watch
 # RUN cargo install cargo-check
 
-
-USER ${USERNAME}
 RUN mkdir -p /home/${USERNAME}/workspace
 WORKDIR /home/${USERNAME}/workspace
 
