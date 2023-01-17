@@ -6,6 +6,17 @@ vscode devcontainer template
 
 ### X11  
 
+<br><br>
+
+windows 10, 11 (wsl2 + wslg)  
+ubuntu
+
+<br><br>
+
+mac  
+Install XQuartz
+
+<br><br><br>
 <br><br><br>
 
 ### PulseAudio  
